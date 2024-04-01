@@ -1,0 +1,6 @@
+<!--pages/sos/index.wxml-->
+<view class='container'>
+  <button class='call' bind:tap="boda">一键呼叫</button>
+  <!-- <button  bind:tap="boda">添加紧急联系人</button> -->
+  
+</view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/map1/index",
+    "pages/map2/index",
+    "pages/map3/index",
+    "pages/sos/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "智能导航",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "usingComponents":{
+    "SOS":"Components/SOS/index"
+  },
+  "requiredPrivateInfos":["getLocation"],
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

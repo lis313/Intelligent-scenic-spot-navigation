@@ -1,0 +1,61 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.Container{
+  
+  width: 100%;
+  height:100%;
+
+}
+.sxdContainer{
+  display: block;
+  width:50vh;
+  height:48vh;
+  background-color: rgb(100, 97, 97);
+  margin:8rpx;
+  
+}
+.sxdbg{
+  display: block;
+  position:absolute;
+  width:50vh;
+  height:48vh;
+  top:0;
+  left:0;
+}
+.bmybg{
+  display: block;
+  position:absolute;
+  width:50vh;
+  height:48vh;
+  top:0;
+  left:0;
+}
+.ggbg{
+  display: block;
+  position:absolute;
+  width:50vh;
+  height:48vh;
+  top:0;
+  left:-170rpx;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+.more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 350rpx;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<View class='Container'>
+  <scroll-view scroll-y class='menu' style="width: 100%; height: 100%;">
+    <grid-view type="aligned">   
+      <button class='sxdContainer' bind:tap="bindViewTap">
+        <image class="sxdbg" src="/images/sxdbg.jpeg" mode="heightFix"></image>
+      </button>
+      <button class='sxdContainer' bind:tap="bindViewBmy">
+        <image class="bmybg" src="/images/bmy.jpg" ></image>
+      </button> 
+      <button class='sxdContainer' bind:tap="bindViewGg">
+        <image class="ggbg" src="/images/gg.jpg" ></image>
+      </button> 
+      <button class='sxdContainer'>
+        <span class='more' bind:tap='more'>+</span>
+      </button>
+    </grid-view>
+  </scroll-view>
+</View>

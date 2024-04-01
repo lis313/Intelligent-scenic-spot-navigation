@@ -1,0 +1,224 @@
+/* pages/map1/index.wxss */
+.container {
+  width: 100vh;
+  height: 100vh;
+  background-color: rgb(110, 106, 106);
+}
+
+.page-section-gap {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}
+
+#myMap {
+  width: 100vh;
+  height: 100vh;
+}
+
+.leftControl {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.top {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 150rpx;
+  height: 30px;
+  border:1px solid white;
+  /* border-bottom-right-radius: 40rpx; */
+  background-color: #fff;
+  /* border-radius:40rpx; */
+
+}
+
+.sportControl {
+  display: block;
+  position: fixed;
+  left: 15rpx;
+  top: 5rpx;
+  /* border: 1px solid black; */
+
+}
+
+.sportimg {
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.sportText {
+  position: absolute;
+  width: 300rpx;
+  right: 0rpx;
+  top: 0rpx;
+  /* border:1px solid red; */
+  /* left:-10rpx; */
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.floorControl {
+  display: block;
+  width: 120rpx;
+  height: 440rpx;
+  /* background-color: #fff; */
+  /* border-radius: 12rpx; */
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.select_text {
+  /* display: block; */
+  font-size: 30rpx;
+  flex: 1;
+  /* margin-right: 10rpx; */
+}
+
+.select_img {
+  width: 55rpx;
+  height: 55rpx;
+  display: block;
+  transition: 0.9s;
+  /* flex:1; */
+}
+
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+
+.option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  transition: height 0.3s;
+}
+
+.option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+  z-index: 999;
+}
+
+.bContent {
+  position: absolute;
+  display: flex;
+  bottom: -10rpx;
+  left: 0;
+  width: 100%;
+  height: 500rpx;
+  margin: 0rpx auto;
+  background-color:#f2ece0;
+  /* border-radius: 20rpx; */
+}
+
+.img-container {
+  position: relative;
+  /* display:inline; */
+  /* background-color: rgb(226, 154, 154); */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex:1; */
+}
+
+.albumImg {
+  
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.icon-container{
+  width:40%;
+  height: 100%;
+  position: absolute;
+  left:60%;
+  top:0rpx;
+  /* background-color: rgb(110, 104, 104); */
+}
+.text-container{
+width:40%;
+height: 100%;
+position: absolute;
+left:20%;
+top:0rpx;
+/* background-color: red; */
+display: flex;
+align-items: center;
+}
+
+.text {
+ 
+ 
+}
+
+.icon1 {
+  position: absolute;
+  left:80rpx;
+  top:20rpx; 
+  width:50rpx;
+  height:50rpx;
+
+}
+
+.icon2 {
+  width:55rpx;
+  height:55rpx;
+  position: absolute;
+  left: 200rpx;
+  top: 20rpx;
+  
+}
+
+/* Components/Floor/Floor.wxss */
+.floor-container {
+  position: fixed;
+  background-color: #fff;
+  width: 80rpx;
+  left: 0rpx;
+  top: 300rpx;
+  border-radius: 20rpx;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid rgb(206, 208, 209);
+}

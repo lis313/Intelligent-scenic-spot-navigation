@@ -1,0 +1,4 @@
+<!--pages/sos/index.wxml-->
+<cover-view class='sosControl'>
+        <cover-image bind:tap="goSOS" class='sosimg' src="/images/Emergency SOS.png" mode="" />
+</cover-view>

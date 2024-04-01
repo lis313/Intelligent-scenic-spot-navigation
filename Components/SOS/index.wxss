@@ -1,0 +1,14 @@
+/* pages/sos/index.wxss */
+.sosControl{
+  display: block;
+  position: fixed;
+  left: 80rpx;
+  top:5rpx;
+  /* border:1px solid red; */
+  
+}
+.sosimg {
+  display: block;
+  width: 45rpx;
+  height: 45rpx;
+}

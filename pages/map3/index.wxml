@@ -1,0 +1,48 @@
+<!--pages/map1/index.wxml-->
+<View>
+  <map id="myMap" style="width: 100%; height: 100vh;" latitude="{{latitude}}" longitude="{{longitude}}" polygons="{{polygons}}" markers="{{markers}}"  scale="16" enable-overlooking="{{true}}" rotate="{{0}}" bindmarkertap="mTap" show-location min-scale="16" >
+    <cover-view class='top' style="border-radius: 40rpx;">
+      <SOS />
+      <cover-view class='sportControl'>
+        <cover-image class='sportimg' src="/images/运动健康.png" bind:tap="showS" />
+      </cover-view>
+    </cover-view>
+    <cover-view class='sportText' style='height:{{showSport?150:0}}rpx;border-radius: 20rpx;background-color: #f4f7f1;'>
+      <cover-view class='stepText' style='height:75rpx;width:100%;position: absolute;'>
+        <cover-view style="font-weight: bolder; height:75rpx;width:100%;position: absolute;top:18rpx;left:85rpx;" >2019</cover-view>
+    <cover-image style="width: 60rpx;height: 60rpx;position: absolute;left:5rpx;top:5rpx;" src="../../images/步数.png"></cover-image>
+  
+    </cover-view>
+    <cover-view class='vText' style='height:75rpx;width:100%;position: absolute;top:75rpx'>
+      <cover-view style="font-weight: bolder;height:75rpx;width:100%;position: absolute;top:18rpx;left:85rpx;" >{{speed}}米/秒</cover-view>
+      <cover-image style="width: 60rpx;height: 60rpx;position: absolute;left:5rpx;top:5rpx;" src="../../images/速度.png"></cover-image>
+   
+    </cover-view>
+    </cover-view>
+    <cover-view class='floor-container' style="height:{{floors.length*80}}rpx">
+      <cover-view bind:tap="chooseFloor" wx:for="{{floors}}" wx:key="*this" id="{{index}}" class='box' style="background-color: {{isChoosed==index?'#99963f':'#ffffff'}};">
+       <cover-view >{{item}}</cover-view> 
+      </cover-view>
+    </cover-view>
+
+    <cover-view class='bContent' style='height:{{showButtom?100:0}}rpx;'>
+      <cover-view class='img-container'>
+        <cover-image class='albumImg' wx:if="{{albumSrc}}" src="{{albumSrc}}">
+        </cover-image>
+      </cover-view>
+      <cover-view class='text-container'>
+        <cover-view class='text'>
+          {{text}}
+        </cover-view>
+      </cover-view>
+      <cover-view class='icon-container'>
+        <cover-image class='icon1' wx:if="{{iconUrl}}" src="{{iconUrl}}" bind:tap="audio">
+        </cover-image>
+        <cover-image bind:tap="daohang" class='icon2' src="/images/导航.png">
+        </cover-image>
+      </cover-view>
+
+    </cover-view>
+  </map>
+
+</View>
